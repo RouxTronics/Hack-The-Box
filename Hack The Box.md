@@ -22,7 +22,7 @@ tags:
 	- [Planning](<./Machines/Planning.md>)
 	- [Soulmate](<./Machines/Soulmate.md>)
 	- [Strutted](<./Machines/Strutted.md>)
-	- [test](<./Machines/test.md>)
+	- [tester](<./Machines/tester.md>)
 	- [TheFrizz](<./Machines/TheFrizz.md>)
 	- [TwoMillion](<./Machines/TwoMillion.md>)
 - **Modules**
