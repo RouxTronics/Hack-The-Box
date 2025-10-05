@@ -11,6 +11,7 @@ tags:
 	- [Cap](<./Machines/Cap.md>)
 	- [Cobblestone](<./Machines/Cobblestone.md>)
 	- [CodePartTwo](<./Machines/CodePartTwo.md>)
+	- [DarkZero](<./Machines/DarkZero.md>)
 	- [Editor](<./Machines/Editor.md>)
 	- [Environment](<./Machines/Environment.md>)
 	- [Eureka](<./Machines/Eureka.md>)
@@ -22,7 +23,6 @@ tags:
 	- [Planning](<./Machines/Planning.md>)
 	- [Soulmate](<./Machines/Soulmate.md>)
 	- [Strutted](<./Machines/Strutted.md>)
-	- [tester](<./Machines/tester.md>)
 	- [TheFrizz](<./Machines/TheFrizz.md>)
 	- [TwoMillion](<./Machines/TwoMillion.md>)
 - **Modules**
